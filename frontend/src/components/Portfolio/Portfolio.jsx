@@ -54,26 +54,38 @@ export default function Portfolio({ portfolio }) {
         </div>
 
         <div className={`portfolio__grid ${animating ? 'portfolio__grid--exit' : 'portfolio__grid--enter'}`}>
-          {loading
-            ? Array.from({ length: 6 }).map((_, i) => <PortfolioCardSkeleton key={i} />)
-            : displayed.map((item, i) => (
+          {loading ? (
+            Array.from({ length: 6 }).map((_, i) => <PortfolioCardSkeleton key={i} />)
+          ) : displayed.length === 0 ? (
+            <div className="portfolio__empty">
+              <span className="portfolio__empty-icon">🔍</span>
+              <p>Aucun projet dans cette catégorie pour le moment.</p>
+            </div>
+          ) : (
+            displayed.map((item, i) => (
+              <div
+                key={`${active}-${i}`}
+                className="portfolio-card"
+                style={{ animationDelay: `${i * 0.06}s` }}
+              >
                 <div
-                  key={`${active}-${i}`}
-                  className="portfolio-card"
-                  style={{ animationDelay: `${i * 0.06}s` }}
+                  className="portfolio-card__image"
+                  style={{ background: item.color }}
+                  role="img"
+                  aria-label={item.title}
                 >
-                  <div className="portfolio-card__image" style={{ background: item.color }}>
-                    <span className="portfolio-card__category">{item.category}</span>
-                    <button className="portfolio-card__link" aria-label="Voir le projet">
-                      <ExternalLink size={18} />
-                    </button>
-                  </div>
-                  <div className="portfolio-card__content">
-                    <h3 className="portfolio-card__title">{item.title}</h3>
-                    <p className="portfolio-card__description">{item.description}</p>
-                  </div>
+                  <span className="portfolio-card__category">{item.category}</span>
+                  <button className="portfolio-card__link" aria-label={`Voir le projet : ${item.title}`}>
+                    <ExternalLink size={18} />
+                  </button>
                 </div>
-              ))}
+                <div className="portfolio-card__content">
+                  <h3 className="portfolio-card__title">{item.title}</h3>
+                  <p className="portfolio-card__description">{item.description}</p>
+                </div>
+              </div>
+            ))
+          )}
         </div>
       </div>
     </section>

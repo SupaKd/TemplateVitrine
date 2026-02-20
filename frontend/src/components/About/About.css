@@ -1,0 +1,196 @@
+.about {
+  padding: var(--section-padding);
+  background: var(--color-bg);
+}
+
+/* ── Layout intro ─────────────────────────────────────── */
+.about__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: start;
+  margin-bottom: 80px;
+}
+
+/* ── Texte gauche ─────────────────────────────────────── */
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__title {
+  font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.about__description {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+.about__badge-row {
+  display: flex;
+  gap: 24px;
+  padding-top: 8px;
+  flex-wrap: wrap;
+}
+
+.about__badge {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.about__badge-number {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.about__badge-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+/* ── Valeurs droite ───────────────────────────────────── */
+.about__values {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about__value-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-alt);
+  transition: all var(--transition);
+}
+
+.about__value-card:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  transform: translateX(4px);
+}
+
+.about__value-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition);
+}
+
+.about__value-card:hover .about__value-icon {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.about__value-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.about__value-description {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ── Équipe ───────────────────────────────────────────── */
+.about__team-section {
+  border-top: 1px solid var(--color-border);
+  padding-top: 64px;
+}
+
+.about__team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.about__team-card {
+  text-align: center;
+  padding: 28px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-alt);
+  transition: all var(--transition);
+  cursor: default;
+}
+
+.about__team-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.about__team-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 auto 16px;
+  letter-spacing: 0.05em;
+  transition: transform var(--transition);
+}
+
+.about__team-card:hover .about__team-avatar {
+  transform: scale(1.08);
+}
+
+.about__team-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.about__team-role {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .about__layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about__team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .about__team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .about__badge-row {
+    gap: 16px;
+  }
+}

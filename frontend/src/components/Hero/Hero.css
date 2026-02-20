@@ -42,7 +42,7 @@
   gap: 8px;
   background: var(--color-primary-light);
   border: 1px solid rgba(37, 99, 235, 0.2);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   padding: 6px 16px;
   width: fit-content;
 }
@@ -56,7 +56,7 @@
 .hero__badge-dot {
   width: 8px;
   height: 8px;
-  background: #10b981;
+  background: var(--color-success);
   border-radius: 50%;
   display: inline-block;
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
@@ -173,7 +173,7 @@
 }
 
 .hero__visual-dot--green {
-  background: #10b981;
+  background: var(--color-success);
 }
 
 .hero__visual-dot--blue {

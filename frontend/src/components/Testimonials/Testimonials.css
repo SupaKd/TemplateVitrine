@@ -130,6 +130,16 @@
   color: var(--color-primary);
 }
 
+.testimonials__carousel-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.testimonials__dot:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 .testimonials__dots {
   display: flex;
   gap: 6px;
@@ -149,7 +159,7 @@
 .testimonials__dot--active {
   background: var(--color-primary);
   width: 24px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
 }
 
 @media (max-width: 1024px) {

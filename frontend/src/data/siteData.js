@@ -14,9 +14,11 @@ export const site = {
 
 export const nav = [
   { label: "Accueil", href: "#accueil" },
+  { label: "À propos", href: "#apropos" },
   { label: "Services", href: "#services" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Témoignages", href: "#temoignages" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -27,6 +29,74 @@ export const hero = {
   ctaPrimary: { label: "Découvrir nos services", href: "#services" },
   ctaSecondary: { label: "Voir nos réalisations", href: "#portfolio" },
   // badgeText: "Nouveau", // décommenter pour afficher un badge
+};
+
+export const about = {
+  label: "Notre histoire",
+  title: "Une équipe passionnée à votre service",
+  description:
+    "Fondée en 2014, MonEntreprise accompagne les entreprises ambitieuses dans leur transformation digitale. Notre approche allie expertise technique et compréhension profonde de vos enjeux business.",
+  values: [
+    {
+      icon: "Target",
+      title: "Orientés résultats",
+      description: "Chaque décision est guidée par l'impact mesurable sur votre activité.",
+    },
+    {
+      icon: "Heart",
+      title: "Passion & Engagement",
+      description: "Nous traitons chaque projet comme s'il était le nôtre, avec soin et exigence.",
+    },
+    {
+      icon: "Lightbulb",
+      title: "Innovation continue",
+      description: "Nous veillons constamment aux dernières tendances pour vous garder en avance.",
+    },
+  ],
+  team: [
+    { name: "Alice Moreau", role: "CEO & Fondatrice", avatar: "AM", color: "#2563eb" },
+    { name: "Baptiste Leroy", role: "Directeur Technique", avatar: "BL", color: "#7c3aed" },
+    { name: "Clara Petit", role: "Responsable Créa", avatar: "CP", color: "#059669" },
+    { name: "David Roux", role: "Lead Developer", avatar: "DR", color: "#dc2626" },
+  ],
+};
+
+export const faq = {
+  label: "Vos questions",
+  title: "Questions fréquentes",
+  subtitle: "Tout ce que vous devez savoir avant de démarrer avec nous.",
+  items: [
+    {
+      question: "Quels types de projets prenez-vous en charge ?",
+      answer:
+        "Nous intervenons sur des projets web (sites vitrine, e-commerce, applications), mobile, et stratégie digitale. Qu'il s'agisse d'une création de zéro ou d'une refonte, nous nous adaptons à vos besoins.",
+    },
+    {
+      question: "Quels sont vos délais de réalisation ?",
+      answer:
+        "Les délais varient selon la complexité : un site vitrine prend généralement 2 à 4 semaines, une application plus complexe de 2 à 6 mois. Nous établissons toujours un planning détaillé en amont.",
+    },
+    {
+      question: "Proposez-vous un suivi après la livraison ?",
+      answer:
+        "Oui, nous proposons des contrats de maintenance et d'évolution. Notre équipe support reste disponible 7j/7 pour intervenir rapidement en cas de besoin.",
+    },
+    {
+      question: "Comment se déroule la collaboration ?",
+      answer:
+        "Nous commençons par un brief approfondi, puis nous établissons un cahier des charges et un devis. Vous êtes impliqué à chaque étape : maquettes, développement, recette et mise en ligne.",
+    },
+    {
+      question: "Quels sont vos tarifs ?",
+      answer:
+        "Nos tarifs sont établis sur devis selon la portée du projet. Nous sommes transparents sur notre grille tarifaire et nous nous adaptons aux budgets de nos clients, quelle que soit leur taille.",
+    },
+    {
+      question: "Travaillez-vous avec des clients à distance ?",
+      answer:
+        "Absolument. Nous collaborons avec des clients partout en France et à l'international. Nos outils de gestion de projet et nos visioconférences régulières garantissent une communication fluide.",
+    },
+  ],
 };
 
 export const services = [
