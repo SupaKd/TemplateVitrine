@@ -63,8 +63,9 @@ export default function Testimonials({ testimonials }) {
           ))}
         </div>
 
-        {/* Carrousel mobile */}
+        {/* Carrousel tablette + mobile */}
         <div className="testimonials__carousel">
+          <div className="testimonials__carousel-viewport">
           <div
             className="testimonials__carousel-track"
             style={{ transform: `translateX(-${current * 100}%)` }}
@@ -85,6 +86,7 @@ export default function Testimonials({ testimonials }) {
                 </div>
               </div>
             ))}
+          </div>
           </div>
 
           <div className="testimonials__carousel-controls">
