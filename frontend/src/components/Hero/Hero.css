@@ -233,11 +233,36 @@
     padding-bottom: 60px;
   }
 
-  .hero__visual {
-    height: 260px;
+  .hero__content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero__actions {
+    justify-content: center;
   }
 
   .hero__stats {
     gap: 16px;
+    justify-content: center;
+  }
+
+  .hero__visual {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__stats {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero__stat-number {
+    font-size: 1.2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
   }
 }

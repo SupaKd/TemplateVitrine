@@ -172,4 +172,19 @@
   .portfolio__grid {
     grid-template-columns: 1fr;
   }
+
+  .portfolio-card__image {
+    height: 160px;
+  }
+
+  .portfolio-card__content {
+    padding: 16px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-card__link {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.3);
+  }
 }

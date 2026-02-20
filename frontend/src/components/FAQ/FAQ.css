@@ -105,3 +105,19 @@
     gap: 12px;
   }
 }
+
+@media (max-width: 640px) {
+  .faq-item__trigger {
+    padding: 16px;
+  }
+
+  .faq-item__answer {
+    padding: 0 16px 16px;
+    padding-top: 14px;
+  }
+
+  .faq-item__icon {
+    width: 28px;
+    height: 28px;
+  }
+}

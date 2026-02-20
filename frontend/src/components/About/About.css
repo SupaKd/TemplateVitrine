@@ -193,4 +193,18 @@
   .about__badge-row {
     gap: 16px;
   }
+
+  .about__value-card {
+    padding: 14px 16px;
+  }
+
+  .about__team-card {
+    padding: 16px 12px;
+  }
+
+  .about__team-avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 0.9rem;
+  }
 }

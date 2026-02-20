@@ -64,4 +64,8 @@
   .services__grid {
     grid-template-columns: 1fr;
   }
+
+  .service-card {
+    padding: 24px 20px;
+  }
 }

@@ -212,4 +212,19 @@ a.contact__info-value:hover {
   .contact__form-row {
     grid-template-columns: 1fr;
   }
+
+  .contact__info-items {
+    gap: 20px;
+  }
+
+  .contact__form {
+    padding: 20px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact__submit {
+    align-self: stretch;
+    width: 100%;
+  }
 }

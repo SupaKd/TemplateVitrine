@@ -178,4 +178,8 @@
     overflow: hidden;
     border-radius: var(--radius-lg);
   }
+
+  .testimonial-card {
+    padding: 20px 16px;
+  }
 }

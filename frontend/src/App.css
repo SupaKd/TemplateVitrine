@@ -196,6 +196,13 @@
   transform: translateX(0);
 }
 
+/* Section padding réduit sur mobile */
+@media (max-width: 640px) {
+  :root {
+    --section-padding: 56px 20px;
+  }
+}
+
 /* Respect des préférences de réduction de mouvement */
 @media (prefers-reduced-motion: reduce) {
   .reveal, .reveal--left, .reveal--right {

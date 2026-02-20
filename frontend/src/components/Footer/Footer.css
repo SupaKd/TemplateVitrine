@@ -161,6 +161,12 @@
   }
 }
 
+@media (max-width: 640px) {
+  .footer {
+    padding-top: 40px;
+  }
+}
+
 @media (max-width: 480px) {
   .footer__top {
     grid-template-columns: 1fr;
@@ -169,5 +175,9 @@
   .footer__bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .footer__legal {
+    gap: 12px;
   }
 }

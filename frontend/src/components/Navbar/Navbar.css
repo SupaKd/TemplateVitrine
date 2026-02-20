@@ -170,3 +170,9 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 480px) {
+  .navbar__cta {
+    width: 100%;
+  }
+}
