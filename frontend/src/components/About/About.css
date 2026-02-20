@@ -68,7 +68,7 @@
 .about__value-card {
   display: flex;
   gap: 16px;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -196,6 +196,28 @@
 
   .about__value-card {
     padding: 14px 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 12px;
+    row-gap: 4px;
+    align-items: center;
+  }
+
+  .about__value-icon {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .about__value-title {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 0;
+  }
+
+  .about__value-description {
+    grid-column: 1 / -1;
+    grid-row: 2;
   }
 
   .about__team-card {
